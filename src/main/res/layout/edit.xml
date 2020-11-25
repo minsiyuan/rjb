@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/TIME"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#00BCD4"
+            android:gravity="end"
+            android:hint="time" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/TITLE"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#03A9F4"
+            android:hint="Title"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/AUTHOR"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#2196F3"
+            android:hint="Author"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="83dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/ButtonSave"
+                android:layout_width="196dp"
+                android:layout_height="match_parent"
+                android:background="#673AB7"
+                android:hint="确认"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/ButtonPhoto"
+                android:layout_width="196dp"
+                android:layout_height="match_parent"
+                android:background="#673AB7"
+                android:gravity="center"
+                android:hint="添加图片"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/CONTEXT"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_weight="1"
+            android:background="#03A9F4"
+            android:hint="Context"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/IMG"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_weight="1"
+            android:hint="图片"
+         />
+
+
+    </LinearLayout>
+</LinearLayout>
